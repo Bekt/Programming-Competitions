@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Decimal\t Hex \t Binary");
+		System.out.println("-------\t------\t-----");
+
+		int i = -4;
+		
+		
+		/*
+		for(int i=-32; i<129; i++) {
+			System.out.print(i + "\t");
+			System.out.print(Integer.toString(i, 16) + "\t");
+			System.out.println(Integer.toString(i, 2));
+		}*/
+	}
+}
