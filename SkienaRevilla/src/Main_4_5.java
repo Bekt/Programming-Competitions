@@ -1,4 +1,4 @@
-//Status: WA
+//Status: AC
 
 import java.util.*;
 
@@ -9,7 +9,9 @@ public class Main_4_5 {
 		int t = in.nextInt();
 		for (int i = 0; i < t; i++) {
 			solve();
-			System.out.println();
+			if (i < t-1) {
+				System.out.println();				
+			}
 		}
 	}
 	
