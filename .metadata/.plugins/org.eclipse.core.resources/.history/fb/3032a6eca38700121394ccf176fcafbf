@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		
+		
+		while(in.hasNext()) {
+			int fromBase = in.nextInt(), toBase = in.nextInt();
+			String number = in.nextLine().trim();
+			System.out.println("\nAnswer: " + Integer.toString(Integer.parseInt(number, fromBase), toBase));			
+		}
+	}
+	
+}
