@@ -1,3 +1,5 @@
+//Status: AC
+
 import java.util.Scanner;
 
 public class Main_5_4 {
