@@ -1,36 +1,27 @@
-import java.math.BigInteger;
-import java.util.Arrays;
 import java.util.Scanner;
 
-
 public class Main_5_4 {
-	static Scanner in = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		new Main_5_4().run();
-	}
-
-	void run() {
-		char[] data = new char[1000000];
-		Arrays.fill(data, '1');
-		String ones = String.valueOf(data);
+		Scanner in = new Scanner(System.in);
+		int[] data = new int[10001];
 		
-		for(int j=3; j<10000; j++) {
-			if((j % 2) == 0 || (j % 5) == 0)
-				continue;
-			
-			BigInteger n = BigInteger.valueOf(j);
-			BigInteger m;
-			BigInteger zero = BigInteger.ZERO;
-
-			for(int i=String.valueOf(n).length()+1; i<data.length; i++) {
-				m = new BigInteger(ones.substring(0, i));
-				if((m.mod(n).equals(zero))) {
-					System.out.println(j + ": " + i);
-					break;
-				}
-			}			
+		for (int i = 1; i < data.length; i++) {
+			if((i % 2) == 0 || (i % 5) == 0) continue;
+			data[i] = getCount(i);
 		}
 		
+		while(in.hasNextInt()) {
+			System.out.println(data[in.nextInt()]);
+		}
+	}
+	
+	static int getCount(int n) {
+		int curr = 1, count = 1;
+		while((curr % n) != 0) {
+			curr = (curr * 10 + 1) % n;
+			count++;
+		}
+		return count;
 	}
 }

@@ -1,21 +1,27 @@
-//Problem: Skiena & Revilla 4.8 http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=32&page=show_problem&problem=1135
 //Status: WA
 
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.util.*;
 
 public class Main_4_8 {
-	static Scanner in = new Scanner(System.in);
+	static Scanner in;
+	static PrintWriter out;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		in = new Scanner(System.in, "ISO-8859-1");
+		out = new PrintWriter(new OutputStreamWriter(System.out, "ISO-8859-1"));
 		new Main_4_8().run();
 	}
 
 	void run() {
-		int n = in.nextInt(); in.nextLine();
+		int n = in.nextInt();
+		in.nextLine();
 		for(int i=0; i<n; i++) {
-			System.out.println(in.nextLine());
+			out.println(in.nextLine());
 
-			int t = in.nextInt(); in.nextLine();
+			int t = in.nextInt();
+			in.nextLine();
 			Map<String, Team> teams = new HashMap<String, Team>();
 			Team[] teamList = new Team[t];
 			for(int j=0; j<t; j++) {
@@ -25,7 +31,8 @@ public class Main_4_8 {
 				teamList[j] = team; 
 			}
 			
-			int g = in.nextInt(); in.nextLine();
+			int g = in.nextInt();
+			in.nextLine();
 			for(int j=0; j<g; j++) {
 				String str = in.nextLine();
 				String[] line = str.split("#");
@@ -56,6 +63,9 @@ public class Main_4_8 {
 			
 			Arrays.sort(teamList);
 			printTable(teamList);
+			if (i < n - 1) {
+				out.println();
+			}
 		}
 	}
 	
@@ -78,24 +88,21 @@ public class Main_4_8 {
 		int counter = 1;
 		for (int i=0; i<teams.length; i++) {
 			Team team = teams[i];
-			System.out.printf("%d) %s %dp, %dg (%d-%d-%d), %dgd (%d-%d)%n",
+			out.printf("%d) %s %dp, %dg (%d-%d-%d), %dgd (%d-%d)%n",
 					counter++, team.name, team.points, team.games_played, team.wins, team.ties, 
 					team.losses, team.goal_diff(), team.goal_scored, team.goal_against);
 		}
-		System.out.println();
 	}
 }
 
-class Team implements Comparable {
+class Team implements Comparable<Team> {
 	String name;
 	int points, games_played, wins, ties, losses, goal_scored, goal_against;
 	public Team(String str) { name = str; }
 	int goal_diff() { return goal_scored - goal_against; }
 	
 	@Override
-	public int compareTo(Object o) {
-		Team obj = (Team) o;
-		
+	public int compareTo(Team obj) {
 		if(points > obj.points) return -1;
 		if(points < obj.points) return 1;
 		if(wins > obj.wins) return -1;
@@ -107,6 +114,6 @@ class Team implements Comparable {
 		if(games_played < obj.games_played) return -1;
 		if(games_played > obj.games_played) return 1;
 		
-		return name.compareTo(obj.name) * -1;
+		return name.toLowerCase().compareTo(obj.name.toLowerCase());
 	}
 }
