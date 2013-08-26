@@ -70,7 +70,7 @@ public class Main_2_7 {
 	
 	public class Contestant implements Comparable { 
 		Map<Integer, Integer> problemsIncorrect = new HashMap<Integer, Integer>();
-		Set<Integer> problemsSolved = new HashSet<>();
+		Set<Integer> problemsSolved = new HashSet<Integer>();
 		int totalTime = 0;
 		int id;
 		
