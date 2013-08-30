@@ -6,8 +6,9 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Main_1_1.java" changelist="3e7ebf71-ccd1-4c96-9290-0f60f5eba3af" time="1377559341573" ignored="false" />
     <file path="/Main_2_7.java" changelist="3e7ebf71-ccd1-4c96-9290-0f60f5eba3af" time="1377558275937" ignored="false" />
-    <file path="/Main_1_6.java" changelist="3e7ebf71-ccd1-4c96-9290-0f60f5eba3af" time="1377580755104" ignored="false" />
+    <file path="/Main_1_6.java" changelist="3e7ebf71-ccd1-4c96-9290-0f60f5eba3af" time="1377843835072" ignored="false" />
     <file path="/Main_1_2.java" changelist="3e7ebf71-ccd1-4c96-9290-0f60f5eba3af" time="1377632558111" ignored="false" />
+    <file path="/Main_1_8.java" changelist="3e7ebf71-ccd1-4c96-9290-0f60f5eba3af" time="1377843858888" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +69,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main_1_2_10189.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_2_10189.java">
+      <file leaf-file-name="Main_1_8_10142.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_8_10142.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.35795453">
+            <state line="1" column="13" selection-start="50" selection-end="50" vertical-scroll-proportion="0.025817556">
               <folding>
-                <element signature="e#0#1870#0" expanded="true" />
+                <element signature="e#0#3999#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#911#920#0" expanded="true" />
+                <element signature="e#1266#1284#0" expanded="true" />
+                <element signature="e#1334#1350#0" expanded="true" />
+                <element signature="e#3462#3471#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,8 +98,11 @@
         <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_2_7.java" />
         <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_1_1.java" />
         <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_1_1_100.java" />
-        <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_1_6.java" />
         <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_1_2.java" />
+        <option value="$PROJECT_DIR$/SkienaRevilla/input/Main_1_8.in" />
+        <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_1_8.java" />
+        <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_1_6.java" />
+        <option value="$PROJECT_DIR$/SkienaRevilla/src/Main_1_8_10142.java" />
       </list>
     </option>
   </component>
@@ -129,7 +138,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -163,8 +171,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Programming-Competitions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SkienaRevilla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="input" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,11 +203,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Main_1_2">
+  <component name="RunManager" selected="Application.Main_1_8">
     <configuration default="false" name="Main_1_1" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main_1_1" />
       <option name="VM_PARAMETERS" />
@@ -249,6 +272,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="Main_1_8" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main_1_8" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SkienaRevilla" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -261,19 +300,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -301,6 +327,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -337,18 +376,20 @@
       <patterns />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main_1_1" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main_1_1_100" />
       <item index="2" class="java.lang.String" itemvalue="Application.Main_1_6" />
       <item index="3" class="java.lang.String" itemvalue="Application.Main_1_2" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main_1_8" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main_1_2" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main_1_6" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main_1_1_100" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main_1_1" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main_1_8" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main_1_1_100" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main_1_6" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main_1_2" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main_1_1" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -382,6 +423,26 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="53" y="22" width="1627" height="1028" extended-state="0" />
     <editor active="true" />
@@ -391,10 +452,11 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -403,7 +465,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -473,6 +534,49 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_8_10142.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#3999#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#911#920#0" expanded="true" />
+            <element signature="e#1266#1284#0" expanded="true" />
+            <element signature="e#1334#1350#0" expanded="true" />
+            <element signature="e#3462#3471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#3619#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#3619#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_2_10189.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1870#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_2_10189.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -504,7 +608,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#2848#0" expanded="true" />
+            <element signature="e#0#3619#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -528,16 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_1_100.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.051635113">
-          <folding>
-            <element signature="e#0#793#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_2_3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.38726333">
@@ -547,21 +641,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.3321859">
-          <folding>
-            <element signature="e#0#2848#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_2_10189.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.35795453">
           <folding>
             <element signature="e#0#1870#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_1_100.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="595" selection-end="595" vertical-scroll-proportion="0.375">
+          <folding>
+            <element signature="e#0#793#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/input/Main_1_8.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="0" selection-start="814" selection-end="814" vertical-scroll-proportion="2.6592083">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="38" selection-end="38" vertical-scroll-proportion="0.051635113">
+          <folding>
+            <element signature="e#0#3619#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkienaRevilla/src/Main_1_8_10142.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="50" selection-end="50" vertical-scroll-proportion="0.025817556">
+          <folding>
+            <element signature="e#0#3999#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#911#920#0" expanded="true" />
+            <element signature="e#1266#1284#0" expanded="true" />
+            <element signature="e#1334#1350#0" expanded="true" />
+            <element signature="e#3462#3471#0" expanded="true" />
           </folding>
         </state>
       </provider>
