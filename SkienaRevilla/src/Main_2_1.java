@@ -5,15 +5,15 @@ import java.util.Scanner;
 import static java.lang.Math.abs;
 
 public class Main_2_1 {
-	static Scanner in = new Scanner(System.in);
+    static Scanner in = new Scanner(System.in);
 
-	public static void main(String[] args) {
-		while (in.hasNext()) {
-			System.out.println(solve(in.nextInt()));
-		}
-	}
+    public static void main(String[] args) {
+        while (in.hasNext()) {
+            System.out.println(solve(in.nextInt()));
+        }
+    }
 
-	static String solve(int n) {
+    static String solve(int n) {
         boolean[] values = new boolean[n];
         int f, s = in.nextInt();
 
@@ -30,5 +30,5 @@ public class Main_2_1 {
             }
         }
         return "Jolly";
-	}	
+    }
 }
