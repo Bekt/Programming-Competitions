@@ -1,5 +1,5 @@
-// Vito's Family
-// Status: WA
+// Problem: Vito's Family
+// Status: AC
 
 import java.util.*;
 import static java.lang.Math.abs;
