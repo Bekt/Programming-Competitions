@@ -1,5 +1,5 @@
 // Problem: Shell Sort
-// Status: TLE
+// Status: AC
 // Note: Scanner is too slow for this problem (like 7x times)
 
 import java.io.*;
