@@ -1,5 +1,5 @@
 // Problem: Counting
-// Statis:
+// Statis: AC
 
 import java.math.BigInteger;
 import java.util.*;
