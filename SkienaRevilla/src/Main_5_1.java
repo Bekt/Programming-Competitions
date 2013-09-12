@@ -10,11 +10,8 @@ public class Main_5_1 {
         long x, y;
         while ((x = in.nextLong()) + (y = in.nextLong()) > 0) {
             int count = getCount(x, y);
-            System.out.println(count == 0
-                    ? "No carry operation."
-                    : count == 1
-                        ? "1 carry operation."
-                        : count + " carry operations.");
+            System.out.println(count == 0 ? "No carry operation."
+                    : count == 1 ? "1 carry operation." : count + " carry operations.");
         }
     }
 
@@ -30,5 +27,4 @@ public class Main_5_1 {
         }
         return count;
     }
-
 }
