@@ -1,29 +1,16 @@
-//Status: RE
+// Problem: Light, more light
+// Status: AC
 
 import java.util.Scanner;
+import static java.lang.Math.sqrt;
 
 public class Main_7_1 {
 
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
-		while(true) {
-			int n = in.nextInt();
-			if(n == 0) break;
-			System.out.println(getState(n) ? "yes" : "no");
-		}
-	}
-	
-	static boolean getState(int n) {
-		int i = 1;
-		boolean flag = false;
-		while(i <= n) {
-			if(n % i == 0) {
-				flag = !flag;
-			}
-			i++;
-		}
-		return flag;
-	}
-	
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        double n;
+        while ((n = sqrt(in.nextLong())) != 0) {
+            System.out.println(n == (int) n ? "yes" : "no");
+        }
+    }
 }
