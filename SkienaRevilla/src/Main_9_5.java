@@ -1,99 +1,78 @@
-//Status: TLE
+// Problem: Edit Step Ladders
+// Status: TLE
 
-import static java.lang.Math.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+
+import static java.lang.Math.abs;
+import static java.lang.Math.max;
 
 public class Main_9_5 {
-	static Scanner in = new Scanner(System.in);
-	static List<String> words = new ArrayList<String>();
-	static Map<String, Integer> count = new HashMap<String, Integer>();
-	static int max = 0;
-	
-	public static void main(String[] args) {
-		while(in.hasNext()) {
-			solve(in.nextLine());
-		}
-		System.out.println(max);
-	}
-	
-	static void solve(String word) {
-		int c = 0;
-		
-		for (int i = 0; i < words.size(); i++) {
-			String curr = words.get(i);
-			
-			if(isEditStep(word, curr)) {
-				c = max(c, get(count, curr));
-			}
-		}
-		
-		words.add(word);
-		count.put(word, c + 1);
-		max = max(max, c + 1);
-	}
-	
-	static boolean isEditStep(String a, String b) {
-		int sizeA = a.length();
-		int sizeB = b.length();
-		
-		if(abs(sizeA - sizeB) > 1) {
-			return false;
-		}
 
-		if(sizeA == sizeB) {
-			boolean flag = false;
-			for (int i = 0; i < sizeA; i++) {
-				char ai = a.charAt(i);
-				char bi = b.charAt(i);
-				
-				if(ai != bi && flag) {
-					return false;
-				}
-				if(ai != bi) {
-					flag = true;
-				}				
-			}
-			
-			return true;
-		}
-		
-		if(sizeB < sizeA) {
-			String t = b;
-			b = a;
-			a = t;
-			sizeA = a.length();
-			sizeB = b.length();
-		}
-		
-		int i = 0, j = 0;
-		boolean flag = false;
-		while(i < sizeA && j < sizeB) {
-			char ai = a.charAt(i);
-			char bi = b.charAt(i);
+    public static void main(String[] args) throws Exception {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        List<char[]> dictionary = new ArrayList<char[]>();
+        String line;
+        while ((line = in.readLine()) != null) {
+            dictionary.add(line.toCharArray());
+        }
+        System.out.println(solve(dictionary));
+    }
 
-			if(ai != bi && flag) {
-				return false;
-			}
-			if(ai != bi) {
-				flag = true;
-				j++;
-			}
-			else {
-				i++;
-				j++;				
-			}
-		}
-		
-		return true;
-	}
-	
-	static int get(Map<String, Integer> map, String key) {
-		Integer val = map.get(key);
-		return val == null ? 0 : val;
-	}
+    static int solve(List<char[]> dictionary) {
+        int n = dictionary.size();
+        int[] counts = new int[n];
+        int max = 0;
+        for (int i = 0; i < n - 1; i++) {
+            char[] curr = dictionary.get(i);
+            for (int j = i + 1; j < n; j++) {
+                if (isEditable(curr, dictionary.get(j))) {
+                    counts[j] = max(counts[j], counts[i] + 1);
+                    max = max(max, counts[j]);
+                }
+            }
+        }
+        return max == 0 ? 0 : max + 1;
+    }
 
+    static boolean isEditable(char[] ca, char[] cb) {
+        if (abs(ca.length - cb.length) > 1) {
+            return false;
+        }
+        if (ca.length == cb.length) {
+            boolean flag = false;
+            for (int i = 0; i < ca.length; i++) {
+                if (ca[i] != cb[i] && flag) {
+                    return false;
+                }
+                if (ca[i] != cb[i]) {
+                    flag = true;
+                }
+            }
+            return true;
+        }
+
+        if (cb.length < ca.length) {
+            char[] temp = cb;
+            cb = ca;
+            ca = temp;
+        }
+        int i = 0, j = 0;
+        boolean flag = false;
+        while (i < ca.length && j < ca.length) {
+            if (ca[i] != cb[i] && flag) {
+                return false;
+            }
+            if (ca[i] != cb[i]) {
+                flag = true;
+                j++;
+            } else {
+                i++;
+                j++;
+            }
+        }
+        return true;
+    }
 }

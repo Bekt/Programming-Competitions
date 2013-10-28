@@ -1,6 +1,5 @@
 // Problem: Hanoi Tower Troubles Again
 // Status: AC
-// Note: This is a super fast solution
 
 import java.util.HashSet;
 import java.util.Scanner;
