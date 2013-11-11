@@ -1,3 +1,6 @@
+// Problem: Weights and Measures
+// Status: AC
+
 import java.awt.Point;
 import java.util.*;
 import static java.lang.Math.*;
