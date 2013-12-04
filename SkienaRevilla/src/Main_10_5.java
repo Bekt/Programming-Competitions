@@ -1,44 +1,52 @@
-// Status: WA
+// Problem: War
+// Status: AC
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Main_10_5 {
 
     static int[] roots;
+    static int[] orig;
+    static int n;
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        roots = new int[2 * in.nextInt() + 1];
-        for (int i = 0; i < roots.length; roots[i] = i++);
+        n = in.nextInt();
+        orig = new int[2 * n];
+        roots = new int[2 * n];
+        for (int i = 0; i < roots.length; i++) {
+            roots[i] = i;
+            orig[i] = 1;
+        }
         int c, x, y;
-        while ((c = in.nextInt()) > 0 && ((x = 2 * in.nextInt() + 1) + (y = 2 * in.nextInt() + 1)) > 0) {
+        while (((c = in.nextInt()) + (x = in.nextInt()) + (y = in.nextInt())) > 0) {
             if (c == 1 && !setFriends(x, y)) {
                 System.out.println(-1);
             } else if (c == 2 && !setEnemies(x, y)) {
                 System.out.println(-1);
             } else if (c == 3) {
                 System.out.println(areFriends(x, y) ? 1 : 0);
-            } else {
+            } else if (c == 4) {
                 System.out.println(areEnemies(x, y) ? 1 : 0);
             }
         }
     }
 
     static int find(int x) {
-        if (roots[x] == x) {
-            return x;
-        }
-        roots[x] = find(roots[x]);
-        return roots[x];
+        return x == roots[x] ? x : find(roots[x]);
     }
 
     static void union(int x, int y) {
         int rootX = find(x), rootY = find(y);
-        roots[rootX] = rootY;
-    }
-
-    static int half(int x) {
-        return (x % 2) == 0 ? x + 1 : x - 1;
+        if (rootX != rootY) {
+            if (orig[rootX] < orig[rootY]) {
+                roots[rootX] = rootY;
+                orig[rootY] += orig[rootX];
+            } else {
+                roots[rootY] = rootX;
+                orig[rootX] += orig[rootY];
+            }
+        }
     }
 
     static boolean setFriends(int x, int y) {
@@ -46,7 +54,7 @@ public class Main_10_5 {
             return false;
         }
         union(x, y);
-        union(half(x), half(y));
+        union(x + n, y + n);
         return true;
     }
 
@@ -54,17 +62,17 @@ public class Main_10_5 {
         if (areFriends(x, y)) {
             return false;
         }
-        union(x, half(y));
-        union(y, half(x));
+        union(x, y + n);
+        union(y, x + n);
         return true;
     }
 
     static boolean areFriends(int x, int y) {
-        return find(x) == find(y) || find(half(x)) == find(half(y));
+        return find(x) == find(y) || find(x + n) == find(y + n);
     }
 
     static boolean areEnemies(int x, int y) {
-        return find(x) == find(half(y)) || find(y) == find(half(x));
+        return find(x) == find(y + n) || find(y) == find(x + n);
     }
 
 }
