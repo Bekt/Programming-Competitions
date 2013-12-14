@@ -13,8 +13,8 @@ public class Main_8_6 {
             int id = in.nextInt(), n = in.nextInt();
             String str = in.nextLine();
             boolean[] c = new boolean[str.length()-1];
-            for (int i = 1; i < str.length(); c[i-1] = str.charAt(i++) == '1');
-            int[] p = new int[n + 1];
+            for (int i = 1; i < str.length(); c[i - 1] = str.charAt(i++) == '1');
+            int[] p = new int[n];
             sb.append(solve(0, n, id, c, p) ? "REACHABLE\n" : "GARDEN OF EDEN\n");
         }
         System.out.print(sb);
