@@ -8,6 +8,8 @@ local.properties
 .loadpath
 *.*~
 .metadata
+*.py[co]
+__pycache__/
 
 # External tool builders
 .externalToolBuilders/
