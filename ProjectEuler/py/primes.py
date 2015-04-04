@@ -13,3 +13,19 @@ def is_prime(n):
         return False
     return all(n % i != 0 for i in range(3, int(n ** 0.5)+1, 2))
 
+
+def gen_primes(lim=None):
+    """Infinite sequence of prime numbers."""
+    d = {}
+    n, c = 2, 0
+    while lim is None or c < lim:
+        if n not in d:
+            yield n
+            d[n*n] = [n]
+            c += 1
+        else:
+            for p in d[n]:
+                d.setdefault(p+n, []).append(p)
+            del d[n]
+        n += 1
+
